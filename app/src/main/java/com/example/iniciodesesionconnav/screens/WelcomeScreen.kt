@@ -19,18 +19,14 @@ fun WelcomeScreen(navController: NavController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
-        Text(text = "Pantalla Principal")
+        Text("Pantalla Principal")
 
-        Button(
-            onClick = { navController.navigate("login") }
-        ) {
-            Text("Ir a Login")
+        Button(onClick = { navController.navigate("login") }) {
+            Text("Login")
         }
 
-        Button(
-            onClick = { navController.navigate("register") }
-        ) {
-            Text("Ir a Registro")
+        Button(onClick = { navController.navigate("register") }) {
+            Text("Registro")
         }
 
     }

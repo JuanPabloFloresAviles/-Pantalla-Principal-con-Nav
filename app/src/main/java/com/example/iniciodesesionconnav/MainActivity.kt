@@ -13,6 +13,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
+
             InicioDeSesionConNavTheme {
 
                 val navController = rememberNavController()
@@ -20,6 +21,7 @@ class MainActivity : ComponentActivity() {
                 AppNavigation(navController)
 
             }
+
         }
     }
 }

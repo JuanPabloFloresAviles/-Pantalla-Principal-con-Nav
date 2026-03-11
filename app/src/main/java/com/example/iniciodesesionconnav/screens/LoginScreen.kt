@@ -19,11 +19,9 @@ fun LoginScreen(navController: NavController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
-        Text(text = "Pantalla Login")
+        Text("Pantalla Login")
 
-        Button(
-            onClick = { navController.navigate("welcome") }
-        ) {
+        Button(onClick = { navController.navigate("welcome") }) {
             Text("Volver")
         }
 
