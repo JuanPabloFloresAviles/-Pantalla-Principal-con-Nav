@@ -21,8 +21,7 @@ fun RegisterScreen(navController: NavController) {
     val telefonoValido = telefono.matches(Regex("^\\d{10}$"))
     val passIguales = pass1 == pass2 && pass1.isNotEmpty()
 
-    val formularioValido =
-        nombreValido && correoValido && telefonoValido && passIguales
+    val formularioValido = nombreValido && correoValido && telefonoValido && passIguales
 
     Column(
         modifier = Modifier

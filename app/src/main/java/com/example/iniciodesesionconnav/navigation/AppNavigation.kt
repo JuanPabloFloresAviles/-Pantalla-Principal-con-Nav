@@ -10,24 +10,12 @@ import com.example.iniciodesesionconnav.screens.WelcomeScreen
 
 @Composable
 fun AppNavigation(navController: NavHostController) {
-
     NavHost(
         navController = navController,
         startDestination = "welcome"
     ) {
-
-        composable("welcome") {
-            WelcomeScreen(navController)
-        }
-
-        composable("login") {
-            LoginScreen(navController)
-        }
-
-        composable("register") {
-            RegisterScreen(navController)
-        }
-
+        composable("welcome") { WelcomeScreen(navController) }
+        composable("login") { LoginScreen(navController) }
+        composable("register") { RegisterScreen(navController) }
     }
-
 }
